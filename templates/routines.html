@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Workout Routines</title>
+</head>
+<body>
+    <h1>All Workout Routines</h1>
+    <table border="1">
+        <tr>
+            <th>Routine ID</th>
+            <th>Username</th>
+            <th>Routine Name</th>
+            <th>Start Date</th>
+            <th>Actions</th>
+        </tr>
+        {% for routine in routines %}
+        <tr>
+            <td>{{ routine[0] }}</td>
+            <td>{{ routine[1] }}</td>
+            <td>{{ routine[2] }}</td>
+            <td>{{ routine[3] }}</td>
+            <td>
+                <a href="/routine_exercises/{{ routine[0] }}">View Exercises</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+    <br>
+    <a href="/">Back to Home</a>
+</body>
+</html>
+

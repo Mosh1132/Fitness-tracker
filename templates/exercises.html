@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>All Exercises</title>
+</head>
+<body>
+    <h1>All Exercises</h1>
+    <table border="1">
+        <tr>
+            <th>Exercise ID</th>
+            <th>Exercise Name</th>
+            <th>Muscle Group</th>
+        </tr>
+        {% for exercise in exercises %}
+        <tr>
+            <td>{{ exercise[0] }}</td>
+            <td>{{ exercise[1] }}</td>
+            <td>{{ exercise[2] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <br>
+    <a href="/add_exercise">Add New Exercise</a>
+    <br>
+    <a href="/">Back to Home</a>
+</body>
+</html>
+

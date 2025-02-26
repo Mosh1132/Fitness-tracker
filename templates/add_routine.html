@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Routine</title>
+</head>
+<body>
+    <h1>Add a New Routine for User {{ user_id }}</h1>
+    <form method="POST">
+        <label>Routine Name:</label>
+        <input type="text" name="routine_name" required><br>
+        <label>Start Date:</label>
+        <input type="date" name="start_date"><br>
+        <button type="submit">Add Routine</button>
+    </form>
+    <br>
+    <a href="/users">Back to Users</a>
+</body>
+</html>
+

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Log</title>
+</head>
+<body>
+    <h1>Add a New Workout Log for User {{ user_id }}</h1>
+    <form method="POST">
+        <label>Exercise ID:</label>
+        <input type="text" name="exercise_id" required><br>
+        <label>Sets:</label>
+        <input type="number" name="sets" required><br>
+        <label>Reps:</label>
+        <input type="number" name="reps" required><br>
+        <label>Weight:</label>
+        <input type="number" name="weight" required><br>
+        <label>Date (YYYY-MM-DD):</label>
+        <input type="date" name="log_date" required><br>
+        <button type="submit">Add Log</button>
+    </form>
+    <br>
+    <a href="/logs/{{ user_id }}">Back to Logs</a>
+    <br>
+    <a href="/">Back to Home</a>
+</body>
+</html>
